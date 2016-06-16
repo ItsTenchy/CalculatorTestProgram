@@ -129,7 +129,7 @@ namespace Calculator
 
                 if (n1 == 0)
                 {
-                    MessageBox.Show("Cannot divide by 0.");
+                    MessageBox.Show("Cannot divide 0 by " + n2.ToString() + ".");
                     btn_clear.PerformClick();
                 }
                 else if (n2 == 0)
