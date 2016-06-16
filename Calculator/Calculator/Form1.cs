@@ -127,13 +127,27 @@ namespace Calculator
             if (op_divide.Checked)
             {
 
-                // Calculates the correct answer
-                int ans = n1 / n2;
+                if (n1 == 0)
+                {
+                    MessageBox.Show("Cannot divide by 0.");
+                    btn_clear.PerformClick();
+                }
+                else if (n2 == 0)
+                {
+                    MessageBox.Show("Cannot divide by 0.");
+                    btn_clear.PerformClick();
+                }
+                else
+                {
 
-                // Displays the answer.
-                MessageBox.Show("The answer is " + ans.ToString());
-                txt_lastans.Text = "Last answer: " + ans.ToString();
+                    // Calculates the correct answer
+                    int ans = n1 / n2;
 
+                    // Displays the answer.
+                    MessageBox.Show("The answer is " + ans.ToString());
+                    txt_lastans.Text = "Last answer: " + ans.ToString();
+
+                }
             }
         }
     }
