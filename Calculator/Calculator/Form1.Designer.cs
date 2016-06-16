@@ -162,6 +162,7 @@
             this.Controls.Add(this.btn_calc);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.pn_opselect.ResumeLayout(false);
             this.pn_opselect.PerformLayout();
             this.ResumeLayout(false);
