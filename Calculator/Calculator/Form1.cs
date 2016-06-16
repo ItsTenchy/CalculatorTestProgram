@@ -16,5 +16,16 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+
+            // Function is called on pressing button 'Clear'.
+            // Clears the window back to it's original state.
+            tb_n1.Text = "";
+            tb_n2.Text = "";
+            op_plus.Select();
+
+        }
     }
 }
