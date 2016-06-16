@@ -39,6 +39,7 @@
             this.tb_n2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_clear = new System.Windows.Forms.Button();
+            this.txt_lastans = new System.Windows.Forms.Label();
             this.pn_opselect.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +51,7 @@
             this.btn_calc.TabIndex = 0;
             this.btn_calc.Text = "Calculate";
             this.btn_calc.UseVisualStyleBackColor = true;
+            this.btn_calc.Click += new System.EventHandler(this.btn_calc_Click);
             // 
             // pn_opselect
             // 
@@ -148,11 +150,20 @@
             this.btn_clear.UseVisualStyleBackColor = true;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
+            // txt_lastans
+            // 
+            this.txt_lastans.AutoSize = true;
+            this.txt_lastans.Location = new System.Drawing.Point(101, 104);
+            this.txt_lastans.Name = "txt_lastans";
+            this.txt_lastans.Size = new System.Drawing.Size(0, 13);
+            this.txt_lastans.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(309, 179);
+            this.Controls.Add(this.txt_lastans);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_n2);
@@ -183,6 +194,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.Label txt_lastans;
     }
 }
 
